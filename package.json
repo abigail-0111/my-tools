@@ -4,7 +4,7 @@
   "description": "A tools for windows",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "chcp 65001 && electron ."
   },
   "repository": "https://github.com/mmqic/my-windows-tools",
   "keywords": [
