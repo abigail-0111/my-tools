@@ -4,7 +4,15 @@
   "description": "A tools for windows",
   "main": "main.js",
   "scripts": {
-    "start": "chcp 65001 && electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.my-tools.app",
+    "copyright": "my-tools",
+    "productName": "My Tools",
+    "compression": "store"
   },
   "repository": "https://github.com/mmqic/my-windows-tools",
   "keywords": [
@@ -14,6 +22,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "^12.0.2"
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.2"
   }
 }
