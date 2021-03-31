@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+  <div class="part">
+    <div class="title">定时操作</div>
+    <div>
+      <input id="text" type="number" value="1800" placeholder="单位秒">
+      <button id="btn-submit">确认</button>
+    </div>
+
+    <div class="btn-group">
+      <button data-value="1800">1800s（30min）后关机</button>
+      <button data-value="2700">2700s（45min）后关机</button>
+      <button data-value="3600">3600s（60min）后关机</button>
+    </div>
+  </div>
+
+  <div class="part">
+    <div class="title">取消操作</div>
+    <button id="btn-reset">取消定时关机</button>
+  </div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src=".././renderer.js"></script>
+</body>
+
+</html>

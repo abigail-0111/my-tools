@@ -1,0 +1,17 @@
+.part {
+  margin: 30px 0 40px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.btn-group {
+  margin: 20px 0;
+}
+
+.btn-group button {
+  display: block;
+  margin-bottom: 10px;
+}

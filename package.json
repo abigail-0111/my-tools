@@ -6,13 +6,29 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mw"
   },
   "build": {
     "appId": "com.my-tools.app",
     "copyright": "my-tools",
     "productName": "My Tools",
-    "compression": "store"
+    "compression": "store",
+    "win": {
+      "target": [{
+        "target": "nsis"
+      }]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "dmg": {},
+    "linux": {}
   },
   "repository": "https://github.com/mmqic/my-windows-tools",
   "keywords": [
