@@ -1,4 +1,6 @@
 # electron-tools
+## Demo
+![demo](./docs/images/demo_01.png)
 ## Install
 ```
 yarn / npm install
@@ -7,4 +9,3 @@ yarn / npm install
 ```
 yarn dist / npm run dist
 ```
-
